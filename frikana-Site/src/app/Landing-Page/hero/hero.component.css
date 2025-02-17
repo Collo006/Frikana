@@ -116,6 +116,11 @@ h1{
 
 }
 .words{
+    scale: .8; opacity:0;
+    animation: fade-in1 linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+
     >#one{
         margin-top: 5px;
         padding-left: 16px;
@@ -150,10 +155,18 @@ h1{
 
     }
 }
+@keyframes fade-in1{
+    to {scale: 1; opacity:1;}
+}
+
 .side-pics{
     display: flex;
     padding-top: 4rem;
     padding-left: 1rem;
+    scale: .8; opacity:0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
     >.pic-1{
         margin-right: -1rem;
         width: 15vw;
@@ -180,6 +193,9 @@ h1{
         border-radius: 100px; 
 
     }
+}@keyframes fade-in{
+
+    to {scale: 1; opacity:1;}
 }
 
 #contacts{
