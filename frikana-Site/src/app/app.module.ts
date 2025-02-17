@@ -4,6 +4,7 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './Landing-Page/hero/hero.component';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { HeroComponent } from './Landing-Page/hero/hero.component';
   ],
   imports: [
     BrowserModule,
+    NgOptimizedImage,
     AppRoutingModule
   ],
   providers: [
