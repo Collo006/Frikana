@@ -30,48 +30,49 @@ a{
 }
 a:hover{
     transition: 0.5s ease-in-out;
-    
-    color: aqua;
+
 }
 #home{
     position: relative;
-    padding-top: 1rem;
     height: 100vh;
 }
 h1{
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 3rem;
     font-family: "Atkinson Hyperlegible Next";
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    font-size: 35px;
 }
 .plane{
-    border: 1px solid black;
-    margin-left: 12rem;
-    margin-top: 1rem;
-    width: 70vw;
-    height: 45vh;
-    background-color: black;
-    border-radius: 150px;
+    height: 100vh;
     z-index: -1;
-
+    background-image: url('/assets/images/biplane1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.inner-plane{
-    border: 1px solid white;
+/*.inner-plane{
     background-color: red;
     width: 65vw;
     height: 40vh;
-    margin-top: 1rem;
-    margin-left: 2rem; 
-}
+    margin-top: 0rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}*/
 .content{
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom:1rem;
     padding-left: 1rem;
+    padding-right: 1rem;
     font-family: "Maven Pro", serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 20px;
+    color: black;
 }
 #services{
     padding-top: 1rem;
@@ -127,7 +128,7 @@ h1{
         width: 3vw;
         border-radius: 50px;
         font-family: "Montserrat", serif;
-        background-color: #289c43;
+        background-color: black;
         color: white;
 
     }
@@ -201,9 +202,6 @@ h1{
 #contacts{
     padding-top: 2rem;
     padding-left: 6rem;
-    height: auto;
-    height: 200vh;
-
     >h2{
         font-family:  "Maven Pro", serif;
         font-optical-sizing: auto;
