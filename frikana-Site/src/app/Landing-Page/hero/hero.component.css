@@ -7,8 +7,8 @@
     display: flex;
 }
 #frikana-logo{
-    margin-left: 10rem;
-    padding-top: 1rem;
+    margin-left: 5rem;
+    padding-top: 0;
 
 }
 .list{
@@ -22,14 +22,17 @@
     
 }
 
-a{
+ a{
     text-decoration: none;
     color: black;
     font-size: 18px;
-    
+    font-weight: bold;
 }
+
 a:hover{
-    transition: 0.5s ease-in-out;
+    background-color: white;
+    border-bottom: 3px solid black;
+    transition: .5s ease;
 
 }
 #home{
@@ -109,19 +112,22 @@ h1{
 }
 .permit-pic{
     display: grid;
-    grid-template-columns: 45rem auto;
+    grid-template-columns: auto auto;
     gap: 30px;
-    padding-left: 1rem;
+    padding-left: 0rem;
     padding-top: 1rem;
     padding-bottom: 5rem;
 
+}
+#pic-11{
+    margin-left: -1rem;
 }
 .words{
     scale: .8; opacity:0;
     animation: fade-in1 linear forwards;
     animation-timeline: view();
     animation-range: entry;
-
+    width: 48rem;
     >#one{
         margin-top: 5px;
         padding-left: 16px;
@@ -163,7 +169,7 @@ h1{
 .side-pics{
     display: flex;
     padding-top: 4rem;
-    padding-left: 1rem;
+    padding-left: 0rem;
     scale: .8; opacity:0;
     animation: fade-in linear forwards;
     animation-timeline: view();
@@ -258,4 +264,93 @@ h1{
 }
 .circle-3{
     background-color: crimson;
+}
+.contact-line{
+    margin-left: -6rem;
+    margin-top: 1rem;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    border-block-start:3px solid black;
+}
+.statement{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: "Maven Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+}
+.last-line{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 1rem;
+}
+.side-1{
+    padding-left: 2rem;
+    > h2{
+    font-family: "Atkinson Hyperlegible Next";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    padding-left: 2.5rem;
+} ul > a{
+    list-style: none;
+    padding-left: -3rem;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+} li{
+   padding-top: 0.2rem;
+   padding-bottom: 0.5rem;
+}
+
+}
+.side-2{
+   > h2{
+    font-family: "Atkinson Hyperlegible Next";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    padding-left: 2.5rem;
+   }
+}
+.email,.media,.socials{
+    cursor: pointer;
+}
+.email{
+    position: absolute;
+    padding-bottom: 3rem;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+
+}
+.drop{
+    z-index: -1;
+    display: none;
+    
+    >a{
+        font-size: 14px;
+    }
+    a:hover{
+        font-size: 14px;
+        transition: none;
+        border-bottom: none;
+        background-color: none;
+      }
+  
+}
+.email:hover .drop{
+    display: block;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    cursor: pointer;
 }
